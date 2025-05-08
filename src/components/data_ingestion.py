@@ -5,6 +5,8 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.logger import logging
 from src.exception import CustomException
+from src.components.data_transformation import DataTransformation
+from src.components.data_transformation import DataTransformationConfig
 @dataclass
 class DataIngesionConfig:
     train_data_path: str=os.path.join('artifacts',"train.csv")
